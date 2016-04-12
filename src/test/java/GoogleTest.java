@@ -14,6 +14,7 @@ public class GoogleTest {
        open("http://google.com");
         $(By.name("q")).setValue("Selenide").pressEnter();
 
+
         $$("#ires .g").shouldHave(CollectionCondition.size(10));
         $("#ires .g").shouldHave(Condition.text("Selenide: лаконичные и стабильные UI тесты на Java"));
 
